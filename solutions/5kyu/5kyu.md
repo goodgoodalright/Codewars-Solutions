@@ -1,0 +1,1 @@
+# This folder should contain all 5kyu responses.
