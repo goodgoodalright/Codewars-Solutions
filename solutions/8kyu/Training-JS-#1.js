@@ -1,4 +1,4 @@
-// SOLUTION
+// Training JS #1: Create Your First JS Function and Print "Hello World!"
 function helloWorld() {
   var str = "Hello World!";
   console.log(str)
