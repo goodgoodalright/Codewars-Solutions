@@ -1,4 +1,7 @@
 // Magical Well
+const magicalWell = (a, b, n) => n ? a*b + magicalWell(a+1, b+1, n-1) : 0;
+
+// || 
 
 function magicalWell(a, b, n) {
      let payout = 0;
