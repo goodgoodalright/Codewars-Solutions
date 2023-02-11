@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio</title>
+     <script src="https://kit.fontawesome.com/572a286c23.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+          rel="stylesheet">
+     <link href="fcc_portfolio.css" rel="stylesheet">
+     <!-- based on https://personal-portfolio.freecodecamp.rocks/ -->
+</head>
+
+<body>
+     <header>
+          <a href="#welcome-section" id="hidden"><i class="fa-solid fa-circle-up"></i></a>
+          <!-- either class hide/show or display: hidden / flex; -->
+          <navbar id="navbar">
+               <a href="#projects">Projects</a>
+               <a href="#about">About</a>
+               <a href="#contact">Contact</a>
+          </navbar>
+     </header>
+     <main>
+          <section id="welcome" class="section">
+               <h1>Yo, I'm D. Soto</h1>
+               <p>a web developer</p>
+          </section>
+
+          <!-- add .project-tile CSS; contains at least 1 <a> -->
+          <section id="projects" class="section">
+               <h2 class="projects-section-header">Some of my projects</h2>
+
+               <div id="projects-grid" class="grid">
+                    <!-- 
+                         <a class="project-tile project one" href="#" target="_blank">
+                         <img class="project-image" src="#" alt="project">
+                         <p class="project-text-wrap"></p>
+                         </a>
+                         <div class="project-tile project one"> 
+                         <!- div template ->
+                         <div class="iframe-wrap">
+                         <iframe src="fcc_projectone.html" id="project-one" class="project-image" scrolling="no">
+                         <!- src: project page; id & class: div image ->
+                         </iframe>
+                         </div>
+                         <a class="project-link" href="#" target="_blank">
+                              <span class="code">" Tribute Page "</span>
+                         </a>
+                         </div>
+                    -->
+
+                    <a href="fcc_productpage.html" target="_blank" class="one project project-tile rounded">
+                    <!-- a template -->
+                         <!-- <img class="project-image rounded" src="#" alt="project"> -->
+                         <iframe src="fcc_productpage.html" id="project-one" class="project-image rounded" scrolling="no">
+                         <!-- src: project page; id & class: div image -->
+                         </iframe>
+                         <p class="project-text-wrap rounded">
+                              <span class="code">&#60;</span><span class="code-text">Luthier Page</span><span class="code">/></span>
+                         </p>
+                    </a>
+
+                    <a href="fcc_ferriswheel.html" target="_blank" class="two project project-tile rounded">
+                         <iframe src="fcc_ferriswheel.html" id="project-two" class="project-image rounded" scrolling="no"></iframe>
+                         <p class="project-text-wrap rounded">
+                              <span class="code">&#60;</span><span class="code-text">Sunset Spin</span><span class="code">/></span>
+                         </p>
+                    </a>
+
+                    <a class="three project project-tile rounded" href="fcc_tribute.html" target="_blank">
+                         <iframe src="fcc_tribute.html" id="project-three" class="project-image rounded" scrolling="no"></iframe>
+                         <p class="project-text-wrap rounded">
+                              <span class="code">&#60;</span><span class="code-text">Nujabes</span><span class="code">/></span>
+                         </p>
+                    </a>
+
+                    <a class="four project project-tile rounded" href="fcc_techdocumentation.html" target="_blank">
+                         <iframe src="fcc_techdocumentation.html" id="project-three" class="project-image rounded" scrolling="no"></iframe>
+                         <p class="project-text-wrap rounded">
+                              <span class="code">&#60;</span><span class="code-text">Wiki / Manual</span><span class="code">/></span>
+                         </p>
+                    </a>
+
+                    <a class="five project project-tile rounded" href="fcc_magazine.html" target="_blank">
+                         <iframe src="fcc_magazine.html" id="project-three" class="project-image rounded" scrolling="no"></iframe>
+                         <p class="project-text-wrap rounded">
+                              <span class="code">&#60;</span><span class="code-text">Newsletter</span><span class="code">/></span>
+                         </p>
+                    </a>
+
+                    <a class="six project project-tile rounded" href="fcc_skyline.html" target="_blank">
+                         <iframe src="fcc_skyline.html" id="project-three" class="project-image rounded" scrolling="no"></iframe>
+                         <p class="project-text-wrap rounded">
+                              <span class="code">&#60;</span><span class="code-text">HCDH</span><span class="code">/></span>
+                         </p>
+                    </a>
+
+                    
+                    <div class="hidden-projects hidden">
+                         <a class="project project-tile rounded" href="fcc_nutrition.html" target="_blank">
+                              <iframe src="fcc_nutrition.html" id="project-four" class="project-image rounded" scrolling="no"></iframe>
+                              <p class="project-text-wrap rounded">
+                                   <span class="code">&#60;</span><span class="code-text">Nutrition Panel</span><span class="code">/></span>
+                              </p>
+                         </a>
+                         
+                         <a class="project project-tile rounded" href="fcc_balancesheet.html" target="_blank">
+                              <iframe src="fcc_balancesheet.html" id="project-five" class="project-image rounded" scrolling="no"></iframe>
+                              <p class="project-text-wrap rounded">
+                                   <span class="code">&#60;</span><span class="code-text">Nobody Gets It All</span><span class="code">/></span>
+                              </p>
+                         </a>
+                         
+                         <a class="project project-tile rounded" href="fcc_cats.html" target="_blank">
+                              <iframe src="fcc_cats.html" id="project-six" class="project-image rounded" scrolling="no"></iframe>
+                              <p class="project-text-wrap rounded">
+                                   <span class="code">&#60;</span><span class="code-text">Cat Box 9</span><span class="code">/></span>
+                              </p>
+                         </a>
+                    </div>
+               </div>
+               <div class="btn-row">
+                    <a href="#" target="_blank" class="btn show-all rounded">
+                    See More <i class="fas fa-chevron-right"></i></a>
+               </div>
+               <!-- TO DO 
+                    expands project-grid
+                    converts btn content to Hide Extras 
+                    fcc_cats
+                    fcc_penguin
+                    fcc_magazine
+                    fcc_techdocumentation
+               -->
+          </section>
+
+          <section id="about" class="section">
+               <h2>About Me</h2>
+          </section>
+
+          <section id="contact" class="contact-section section">
+               <div class="contact-section-header">
+                    <h2>Hiring & Inquiries</h2>
+                    <p>how do you take your coffee?</p>
+               </div>
+               <div class="contact-links">
+                    <a href="#" target="_blank" class="btn contact-details">
+                         <i class="fa-brands fa-github"></i>
+                         "GitHub"
+                    </a>
+                    <a href="#" target="_blank" class="btn contact-details">
+                         <i class="fa-brands fa-linkedin"></i>
+                         "LinkedIn"
+                    </a>
+                    <a href="#" target="_blank" class="btn contact-details">
+                         <i class="fa-brands fa-twitter"></i>
+                         "Twitter"
+                    </a>
+                    <a href="#" target="_blank" class="btn contact-details">
+                         <i class="fa-solid fa-envelope-circle-check"></i>
+                         "Send an email"
+                    </a>
+                    <a href="#" target="_blank" class="btn contact-details">
+                         <i class="fa-solid fa-mobile-screen"></i>
+                         "Call me"
+                    </a>
+               </div>
+          </section>
+     </main>
+     <footer id="footer" class="footer-section">
+          <a id="profile-link" href="#">Back to Index</a>
+     </footer>
+</body>
+<script>
+     window.querySelector('iframe').load(function () {
+          window.querySelector('iframe').contents().find('.ground').hide();
+          });
+</script>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- based on https://product-landing-page.freecodecamp.rocks/#features --> 
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Soto's Rare Guitars</title>
+     <script src="https://kit.fontawesome.com/572a286c23.js" crossorigin="anonymous"></script>
+     <link href="fcc_productpage.css" rel="stylesheet">
+</head>
+
+<body>
+     <header id="header">
+          <div id="logo-bar">
+               <img id="header-img" alt="logo" src="https://cdn-icons-png.flaticon.com/128/3884/3884592.png">
+               <h1 class="logo-text">Soto's Rare Guitars</h1>
+          </div>
+          <nav id="nav-bar">
+               <a href="#features" class="nav-link">Features</a>
+               <a href="#example" class="nav-link">Example</a>
+               <a href="#pricing" class="nav-link">Pricing</a>
+          </nav>
+     </header>
+
+     <main>
+          <section id="landing">
+               <h2>Landing Text</h2>
+               <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" name="email" type="email" placeholder="you@email.com" required></input>
+               </form>
+               <button id="get-started" type="button" name="get-started" class="button">Get Started</button>
+               <!-- should this be an <a>? -->
+          </section>
+
+          <section id="features">
+               <div class="features-row">
+                    <i class="fa-solid fa-recycle"></i>
+                    <div class="features-box">
+                         <h2>Premium Materials</h2>
+                         <p class="description">Locally and ethically sourced; assembled by artisans with over 100 years
+                              of combined experience.</p>
+                    </div>
+               </div>
+               <div class="features-row">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div class="features-box">
+                         <h2>Fast Shipping</h2>
+                         <p class="description">Secure transit guarantees your product will be delivered in pristine
+                              condition. Express and gift delivery available.</p>
+                    </div>
+               </div>
+               <div class="features-row">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                    <div class="features-box">
+                         <h2>Quality Assurance</h2>
+                         <p class="description">Each instrument undergoes rigorous quality control to ensure a lifetime
+                              of perfect performances.</p>
+                    </div>
+               </div>
+          </section>
+
+          <section id="example">
+               <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/h0B7Z3JERdk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+               </iframe>
+               <figcaption>Our prototypes in action</figcaption>
+          </section>
+
+          <section id="pricing">
+               <div class="price-box">
+                    <h3>Basic</h3>
+                    <h4>$150 - $400</h4>
+                    <div class="price-description">
+                         <p>Guitars & basses for students</p>
+                         <p>Easy to modify, easy to play</p>
+                         <p>Lightweight yet resilient</p>
+                         <p>The perfect gift for any aspiring musician</p>
+                    </div>
+                    <button type="button" name="price-select-1">Select</button>
+               </div>
+               <div class="price-box">
+                    <h3>Premium</h3>
+                    <h4>$500 - $1,200</h4>
+                    <div class="price-description">
+                         <p>SRG signature sound & look</p>
+                         <p>Includes lifetime tech support</p>
+                         <p>Tour-tested by flight and bus</p>
+                         <p>Your next go-to guitar</p>
+                    </div>
+                    <button type="button" name="price-select-2">Select</button>
+               </div>
+               <div class="price-box">
+                    <h3>VIP</h3>
+                    <h4>$1,000+</h4>
+                    <div class="price-description">
+                         <p>Custom-built for your hands</p>
+                         <p>Select each part from our premium inventory</p>
+                         <p>As seen onstage and in gearhead magazines</p>
+                         <p>The last instrument you'll ever need to buy</p>
+                    </div>
+                    <button type="button" name="price-select-3">Select</button>
+               </div>
+          </section>
+
+     </main>
+     <footer id="footer">
+          <div>
+               <a class="footer-link" href="#">Privacy</a>
+               <a class="footer-link" href="#">Terms</a>
+               <a class="footer-link" href="#">Contact</a>
+          </div>
+          <span>Copyright 2022 | Business!</span>
+     </footer>
+</body>
+
+</html>

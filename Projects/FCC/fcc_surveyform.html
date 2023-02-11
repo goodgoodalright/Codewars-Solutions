@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RWD Survey Test</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="fcc_surveyform.css">
+</head>
+<body>
+  <h1 id="title">Survey</h1>
+  <p id="description">This explains the rules.</p>
+  <form id="survey-form">
+    <section class="user-info">
+      <div class="name">
+        <label for="name" id="name-label">Enter your name:</label>
+        <input id="name" type="text" placeholder="Your Name" required>
+      </div>
+
+      <div class="email">
+        <label for="email" id="email-label">Enter your email:</label>
+        <input id="email" type="email" placeholder="your@email.com" required> <!--needs form validation-->
+      </div>
+
+      <div class="age">
+        <label for="number" id="number-label">Enter your age:</label>
+        <input id="number" type="number" min="0" max="100" placeholder="21">
+      </div>
+    </section>
+
+    <section class="select">
+      <label for="dropdown" id="dropdown-label">Select your preferred pronouns:</label>
+      <select id="dropdown" name="dropdown">
+        <option value="">--Click to show--</option>
+        <option value="masculine">He/Him</option>
+        <option value="feminine">She/Her</option>
+        <option value="androgynous">They/Them</option>
+        <option value="other">Not Listed</option>
+      </select>
+    </section>
+
+    <section class="checkboxes">
+    <label for="checkboxes" id="checkboxes-label">Choose up to three gemstones:</label>
+      <div id="checkboxes">
+        <input name="cb1" value="ruby" type="checkbox">
+        <label for="cb1">Ruby</label>
+        <input name="cb2" value="sapphire" type="checkbox">
+        <label for="cb2">Sapphire</label>
+        <input name="cb3" value="emerald" type="checkbox">
+        <label for="cb3">Emerald</label>
+        <input name="cb4" value="diamond" type="checkbox">
+        <label for="cb4">Diamond</label>
+        <input name="cb5" value="turquoise" type="checkbox">
+        <label for="cb5">Turquoise</label>
+        <input name="cb6" value="amethyst" type="checkbox">
+        <label for="cb6">Amethyst</label>
+        <input name="cb7" value="moonstone" type="checkbox">
+        <label for="cb7">Moonstone</label>
+      </div>
+    </section>
+
+    <section class="radio">
+      <label for="radio" id="radio1-label">Has Anyone Really Been Far Even as Decided to Use Even Go Want to do Look More Like?</label>
+      <input name="radio" type="radio" value="yes">
+      <label for="radio-yes">Yes</label>
+      <input name="radio" type="radio" value="no">
+      <label for="radio-no">No</label>
+      <input name="radio" type="radio" value="what">
+      <label for="radio-what">What?</label>
+    </section>
+
+    <section class="user-text">
+      <label for="comments">Do you have any feedback?</label>
+      <textarea id="comments" name="comments" rows="5" cols="25"></textarea>
+    </section>
+
+    <button id="submit" type="submit">Send it!</button>
+
+  </form>
+</body>
+</html>
